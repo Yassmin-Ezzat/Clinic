@@ -35,7 +35,7 @@
 
         <div class="col-3">
 
-           <a href="log in.php"> <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i></a>
+           <a href="logIn.php"> <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i></a>
 
             <button id="call"> Call 15262</button>
             
