@@ -18,11 +18,52 @@
 </head>
 
 <body>
+    <div class="navbar">
+        <div class="col-1">
 
-<?php
-include 'nav.php'
-?>
+            <a href="index.html"><img id="logo" src="images/logo.png" alt="Random Clinic Logo"></a>
+
+        </div>
+        <div class="col-2">
+            <ul class="nav" id="nav-1">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Specialities</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
+
+        <div class="col-3">
+
+            <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i>
+
+            <button id="call"> Call 15262</button>
+            
+            <i id="person1" class="fa-regular fa-user fa-md" style="color: #1f1fb8; margin-top: 7%; "></i>
+
+            <button id="open" class="side-btn"><i id="bars" onclick="openNavbar()" class="fa-solid fa-bars"
+                    style="color: #1f1fb8;"></i></button>
+
+            <button id="close" class="side-btn"><i class="fa-solid fa-xmark" style="color: #1f1fb8;"
+                    onclick="closeNavbar()"></i></button>
+
+        </div>
+
+    </div>
+    <div id="verNav">
+
+        <ul class="nav1" id="nav-1" style=" padding: 3%; margin-top: 15%;">
+
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Specialities</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+
+        </ul>
+
+    </div>
 
 </body>
+<script src="js/script.js"></script>
 
 </html>
