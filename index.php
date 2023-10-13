@@ -20,7 +20,7 @@
 <body>
 
 <?php
-include 'nav.php'
+include 'partials/nav.php'
 ?>
 
 </body>
