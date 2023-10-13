@@ -1,12 +1,12 @@
 <?php 
-include 'nav.php';
+include 'partials/nav.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/login_signUp_style.css">
     <title>Sign Up</title>
 </head>
 <body>
@@ -34,7 +34,7 @@ include 'nav.php';
     </form>
 
     <div>
-        <a href="log in.php" class="forgot">Already have an account? Login here</a>
+        <a href="logIn.php" class="forgot">Already have an account? Login here</a>
     </div>
 </div>
 
