@@ -37,6 +37,7 @@ include 'nav.php'
 <body>
 <img  class=homepageimg src="images/homepage.jpg">
 
+
 <div class=appointmentbox>
     <p class=text1>Book an appointment at our world-class clinics</p>
     <br>
@@ -164,6 +165,7 @@ convenient slot and see the doctor at the time you have selected.</p>
 
 
              
+
 
 </body>
 

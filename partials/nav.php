@@ -26,7 +26,7 @@
         </div>
         <div class="col-2">
             <ul class="nav" id="nav-1">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.php" class="active">Home</a></li>
                 <li><a href="#">Specialities</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Team</a></li>
@@ -35,7 +35,7 @@
 
         <div class="col-3">
 
-            <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i>
+           <a href="logIn.php"> <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i></a>
 
             <button id="call"> Call 15262</button>
             
