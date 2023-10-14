@@ -1,5 +1,5 @@
 <?php
-include 'nav.php'
+include 'partials/nav.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
