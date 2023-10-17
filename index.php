@@ -35,7 +35,7 @@ include 'partials/nav.php'
 </head>
 
 <body>
-<img  class=homepageimg src="images/homepage.jpg">
+<img  class=homepageimg src="images\1670257570pic-13.jpg">
 
 
 <div class=appointmentbox>
