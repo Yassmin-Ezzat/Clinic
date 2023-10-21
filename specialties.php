@@ -26,19 +26,19 @@
         </div>
         <div class="box" id="Endocrinology">
             <h2>Endocrinology</h2>
-            <p>The branch of medicine that deals with disorders of the nervous system.</p>
+            <p>Endocrinology is a branch of biology and medicine dealing with the endocrine system, its diseases, and its specific secretions known as hormones..</p>
         </div>
         <div class="box" id="ENT">
             <h2>ENT</h2>
-            <p>The branch of medicine that deals with disorders of the nervous system.</p>
+            <p>Ear, nose and throat.</p>
         </div>
         <div class="box" id="Nutrition">
             <h2>Nutrition</h2>
-            <p>The branch of medicine that deals with disorders of the nervous system.</p>
+            <p>Weight loss and gain.</p>
         </div>
         <div class="box" id="PediatricSurgery">
             <h2>PediatricSurgery</h2>
-            <p>The branch of medicine that deals with disorders of the nervous system.</p>
+            <p>Pediatric surgery is a subspecialty of surgery involving the surgery of fetuses, infants, children, adolescents, and young adults.</p>
             </div>
     </div>
     <script src="scripts.js"></script>
