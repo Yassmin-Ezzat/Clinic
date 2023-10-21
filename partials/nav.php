@@ -21,7 +21,7 @@
     <div class="navbar">
         <div class="col-1">
 
-            <a href="index.html"><img id="logo" src="images/logo.png" alt="Random Clinic Logo"></a>
+            <a href="index.php"><img id="logo" src="images/logo.png" alt="Random Clinic Logo"></a>
 
         </div>
         <div class="col-2">
