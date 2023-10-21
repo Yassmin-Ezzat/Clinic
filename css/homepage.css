@@ -318,3 +318,8 @@
     font-size: 28px;
   }
  
+  a{
+    text-decoration: none;
+    display: inline;
+    color:#1f1fb8;
+  }
