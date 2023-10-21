@@ -9,7 +9,7 @@
     height:50px;
     transform: translate(225px,50px);
 } */
-.text1{
+.textnum1{
     font-family: 'Kanit', sans-serif;
     font-size:20px;
     transform: translate(25px,50px);
@@ -23,7 +23,7 @@
     display: inline-block ;
     padding:10px;
 }
-.text2{
+.textnum2{
     font-family: 'Kanit', sans-serif;
     font-size:20px;
     transform: translate(320px,-205px);
@@ -37,7 +37,7 @@
     display: inline-block ;
     padding:10px;
 }
-.text3{
+.textnum3{
     font-family: 'Kanit', sans-serif;
     font-size:20px;
     transform: translate(620px,-400px);
@@ -51,7 +51,7 @@
     display: inline-block ;
     padding:10px;
 }
-.text4{
+.textnum4{
     font-family: 'Kanit', sans-serif;
     font-size:20px;
     transform: translate(1000px,-595px);

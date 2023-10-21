@@ -30,7 +30,7 @@ include 'partials/nav.php'
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/homepage.css">
-
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
     <title>homepage</title>
 </head>
 

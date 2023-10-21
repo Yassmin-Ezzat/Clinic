@@ -20,7 +20,7 @@
 <!-- <img class=logoimg src="..\images\logo.png">   -->
 
 <div class=cs>
-<p class=text1>Customer Service</p>
+<p class=textnum1>Customer Service</p>
 <br>
 <a class=service href="#">about</a><br>
 <a class=service href="#">specialities</a><br>
@@ -29,14 +29,14 @@
 </div>
 
 <div class=links>
-<p class=text2>Quick Links</p> 
+<p class=textnum2>Quick Links</p> 
 <a class=link href="#">sign Up</a><br>
 <a class=link href="#">book an appointment</a><br>
 <a class=link href="#">specialities</a><br>
 </div> 
 
 <div class=reach>
-<p class=text3>Reach Out</p> 
+<p class=textnum3>Reach Out</p> 
 
 
 <a class=info href="#">15292</a><br>
@@ -48,7 +48,7 @@
 </div>
 
 <div class=follow>
-<p class=text4>Follow Us</p> 
+<p class=textnum4>Follow Us</p> 
 <i id=icon1 class="fa fa-facebook"></i>
 <i id=icon2 class="fa fa-instagram"></i>
 <i id=icon3 class="fa fa-whatsapp" ></i>
