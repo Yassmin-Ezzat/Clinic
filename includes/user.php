@@ -3,34 +3,32 @@
 
 
 
-// function adduser(){
-//     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//         include_once "../controller/dbh.inc.php";
+function adduser()
+{
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        include_once "../includes/dbh.inc.php";
 
-//         $Name = htmlspecialchars($_POST["fname"]);
-//         $lastname = htmlspecialchars($_POST["lname"]);
-//         $email = htmlspecialchars($_POST["email"]);
-//         $password = htmlspecialchars($_POST["password"]);
+        $Name = htmlspecialchars($_POST["fname"]);
+        $lastname = htmlspecialchars($_POST["lname"]);
+        $email = htmlspecialchars($_POST["email"]);
+        $password = htmlspecialchars($_POST["password"]);
 
-//         $sqle = "SELECT * FROM user WHERE email='$email'";
-//         $result = $connection->query($sqle);
+        $sqle = "SELECT * FROM user WHERE email='$email'";
+        $result = $connection->query($sqle);
 
-//         if ($result->num_rows == 1) {
-//             echo "User Allready Exist";
-//         } else {
 
-//             $sql = "INSERT INTO user (firstname, lastname, email,password) VALUES ('$firstname', '$lastname','$email', '$password')";
 
-//             if ($connection->query($sql) === TRUE) {
-//                 header("Location:../php/index.php");
-//             } else {
-//                 echo "Error: " . $connection->error;
-//             }
+        $sql = "INSERT INTO user (firstname, lastname, email,password) VALUES ('$firstname', '$lastname','$email', '$password')";
 
-//             $connection->close();
-//         }
-//     }
-// }
+        if ($connection->query($sql) === TRUE) {
+            header("Location:../php/index.php");
+        } else {
+            echo "Error: " . $connection->error;
+        }
+
+        $connection->close();
+    }
+}
 function InsertUser()
 {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -39,9 +37,9 @@ function InsertUser()
         $firstname = htmlspecialchars($_POST["Firstname"]);
         $lastname = htmlspecialchars($_POST["lastname"]);
         $email = htmlspecialchars($_POST["email"]);
-        $address= htmlspecialchars($_POST["address"]);
+        $address = htmlspecialchars($_POST["address"]);
         $password = htmlspecialchars($_POST["password"]);
-        
+
         $sqle = "SELECT * FROM user WHERE email='$email'";
         $result = $connection->query($sqle);
 
@@ -82,7 +80,7 @@ function FindUser()
                 $_SESSION["ID"] = $row["ID"];
                 $_SESSION["LName"] = $row["lastname"];
                 $_SESSION["FName"] = $row["firstname"];
-                $_SESSION["Password"] = $row["password"]; 
+                $_SESSION["Password"] = $row["password"];
                 $_SESSION["Email"] = $row["email"];
 
                 var_dump($_SESSION);
@@ -104,6 +102,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             insertUser();
         } elseif ($action === "FindUser") {
             FindUser();
+        }elseif($action==="adduser"){
+            adduser();
         } else {
             echo "Invalid action";
         }
