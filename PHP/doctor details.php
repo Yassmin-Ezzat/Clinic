@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Doctor Details</title>
-    <link rel="stylesheet"  href="../css/doctor details.css">
+    <link rel="stylesheet" href="../public/css/doctor_details.css">
 </head>
+
 <body>
     <h1>Doctor Details</h1>
     <?php
@@ -12,7 +14,8 @@
         [
             'name' => 'Dr. Magdi Yacoub',
             'specialty' => 'Cardiology',
-            'schedule' => ['Monday' => ['Select', '9:00 AM', '10:00 AM', '11:00 AM'],
+            'schedule' => [
+                'Monday' => ['Select', '9:00 AM', '10:00 AM', '11:00 AM'],
             ],
             'clinic' => 'icare Clinic',
             'contact' => '01234567890',
@@ -21,7 +24,8 @@
         [
             'name' => 'Dr. Muneeb Shah',
             'specialty' => 'Dermatology',
-            'schedule' => ['Thursday' => ['Select', '2:00 PM', '3:00 PM', '4:00 PM'],
+            'schedule' => [
+                'Thursday' => ['Select', '2:00 PM', '3:00 PM', '4:00 PM'],
             ],
             'clinic' => 'icare Clinic',
             'contact' => '01123456780',
@@ -54,4 +58,5 @@
     }
     ?>
 </body>
+
 </html>

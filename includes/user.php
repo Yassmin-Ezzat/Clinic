@@ -1,8 +1,4 @@
 <?php
-
-
-
-
 function adduser()
 {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -102,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             insertUser();
         } elseif ($action === "FindUser") {
             FindUser();
-        }elseif($action==="adduser"){
+        } elseif ($action === "adduser") {
             adduser();
         } else {
             echo "Invalid action";
