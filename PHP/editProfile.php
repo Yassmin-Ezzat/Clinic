@@ -6,14 +6,14 @@ include 'partials/nav.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login_signUp_style.css">
+    <link rel="stylesheet" href="../public/css/signup&login.css">
     <title>Sign Up</title>
 </head>
 <body>
 
 
 <div class="signup">
-        <p class="sign">Sign Up</p>
+        <p class="sign">Edit Profile</p>
     </div>
 
     <div class="sign">
@@ -30,12 +30,9 @@ include 'partials/nav.php';
 
         <input id="pac" type="password" class="element" name="pasconfirm" placeholder="Confirm Password"><br>
 
-        <input class="submit" type="submit" value="Sign Up"><br>
+        <input class="submit" type="submit" value="Update"><br>
+        <input class="submit" type="submit" value="Back"><br>
     </form>
-
-    <div>
-        <a href="logIn.php" class="forgot">Already have an account? Login here</a>
-    </div>
 </div>
 
 
