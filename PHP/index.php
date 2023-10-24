@@ -1,5 +1,5 @@
 <?php
-include 'partials/nav.php'
+include "../partials/nav.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +31,7 @@ include 'partials/nav.php'
 </head>
 
 <body>
-    <img class=homepageimg src="../public/images\1670257570pic-13.jpg">
+    <img class=homepageimg src="../public/images/1670257570pic-13.jpg">
 
 
     <div class=appointmentbox>
