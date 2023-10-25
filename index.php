@@ -30,7 +30,10 @@ include 'partials/nav.php'
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/homepage.css">
+
     <link rel="stylesheet" href="css/footernew.css"> 
+
+ 
     <title>homepage</title>
 </head>
 
@@ -50,7 +53,7 @@ include 'partials/nav.php'
 </div>
 
 </div>
-<p class=text3>The ICare experience</p>
+<p class=text3>The El-Hekma  experience</p>
 
 <div class=ex1>
 <img  class=ex1p src="images/help.png">
@@ -152,7 +155,9 @@ convenient slot and see the doctor at the time you have selected.</p>
     
     <button class=spec5>
 <br><br>
+<a  href="Specialties.php">
 <p class=text22>+ more specialties</p>
+</a>
 </button>
 
 </div>
