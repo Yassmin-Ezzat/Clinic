@@ -1,6 +1,7 @@
 * {
     font-family: 'Inter', sans-serif;
     margin: 0%;
+    
 }
 
 
@@ -21,15 +22,18 @@
     border-bottom-color: rgb(226, 224, 224);
     border-top-color: rgb(226, 224, 224);
     display: flex;
+    overflow: hidden;
 }
 
 #bars {
 
     display: none;
+    
 }
 
 #person1 {
     display: none;
+    overflow: hidden;
 }
 
 .col-1 {
@@ -38,6 +42,7 @@
     height: 100%;
     flex: auto;
     margin-top: 5px;
+    overflow: hidden;
 }
 
 #logo {
@@ -54,6 +59,7 @@
     margin-right: 2%;
     margin-left: 5%;
     margin-top: 0.5%;
+    overflow: hidden;
 
 }
 
@@ -69,6 +75,7 @@
     text-align: center;
     float: left;
     align-items: first baseline;
+    overflow: hidden;
 
 }
 
@@ -77,6 +84,7 @@
     list-style-type: none;
     padding: 2%;
     float: left;
+    
 
 }
 
@@ -84,6 +92,7 @@
 
     display: inline;
     font-size: 15px;
+    
 
 }
 
@@ -104,12 +113,14 @@ a:hover {
 
     color: #1136b9;
     transition: all 0.1s;
+    
 }
 
 .nav a:hover {
 
     border-bottom: 3px solid #1136b9;
     font-weight: 600;
+    
 }
 
 .nav a.active {
@@ -134,12 +145,14 @@ a:hover {
     float: right;
     border-radius: 5px;
     font-weight: bold;
+    overflow: hidden;
 
 }
 
 #person:hover {
 
     cursor: pointer;
+    
 }
 
 #call:hover {
@@ -412,12 +425,14 @@ a:hover {
     border: none;
     box-sizing: border-box;
     width: 50px;
+    
 
 }
 
 #close {
 
     display: none;
+    
 
 }
 
@@ -428,6 +443,7 @@ a:hover {
     width: 100%;
     height: 60%;
     z-index: 1000;
+    
 
 }
 
@@ -436,6 +452,7 @@ a:hover {
     list-style-type: none;
     float: left;
     z-index: 1000;
+    
 
 }
 
