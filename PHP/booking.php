@@ -1,5 +1,5 @@
 <?php 
-include 'partials/nav.php';
+include '..\partials\nav.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,8 +9,8 @@ include 'partials/nav.php';
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\booking.css">
-    <link rel="stylesheet" href="css\footer.css">
+    <link rel="stylesheet" href="..\public\css\booking.css">
+   
     <title>booking</title>
 </head>
 <body>
@@ -58,3 +58,6 @@ include 'partials/nav.php';
 <br> <br><br>
 </body>
 </html>
+<?php 
+include '..\partials\footer.php';
+?>

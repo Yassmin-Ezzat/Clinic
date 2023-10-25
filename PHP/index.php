@@ -46,7 +46,7 @@ include "../partials/nav.php";
         </div>
 
     </div>
-    <p class=text3>The ICare experience</p>
+    <p class=text3>The Al-Hekima experience</p>
 
     <div class=ex1>
         <img class=ex1p src="../public/images/help.png">
@@ -165,4 +165,6 @@ include "../partials/nav.php";
 
 </body>
 
-</html>
+</html><?php
+include "../partials/footer.php";
+?>

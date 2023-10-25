@@ -23,9 +23,9 @@
         <div class="col-2">
             <ul class="nav" id="nav-1">
                 <li><a href="../PHP/index.php" class="active">Home</a></li>
-                <li><a href="#">Specialities</a></li>
+                <li><a href="../PHP/Specialties.php">Specialities</a></li>
                 <li><a href="../PHP/about.php">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
+                <li><a href="../PHP/doctors.php">Our Team</a></li>
             </ul>
         </div>
 
