@@ -30,7 +30,7 @@ include 'partials/nav.php'
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/homepage.css">
-    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="css/footernew.css"> 
     <title>homepage</title>
 </head>
 
@@ -157,7 +157,9 @@ convenient slot and see the doctor at the time you have selected.</p>
 
 </div>
 
-
+<?php
+include 'partials/footer.php'
+?>
 
 
 
