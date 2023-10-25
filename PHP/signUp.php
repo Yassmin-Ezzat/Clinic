@@ -1,3 +1,6 @@
+<?php
+include "../partials/nav.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,5 +50,8 @@
 </body>
 
 </html>
+<?php
+include "../partials/footer.php";
+?>
 
 

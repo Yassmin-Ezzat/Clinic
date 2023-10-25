@@ -1,3 +1,6 @@
+<?php
+include "../partials/nav.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +35,10 @@
         </div>
     </div>
     <script src="../public/js/login.js"></script>
+    <br>
 </body>
 
 </html>
+<?php
+include "../partials/footer.php";
+?>

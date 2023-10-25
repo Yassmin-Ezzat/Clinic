@@ -53,7 +53,7 @@
             echo '</li>';
         }
         echo '</ul>';
-        echo '<a href="book.php?doctor=' . urlencode($doctor['name']) . '">Book Now</a>';
+        echo '<a href="booking.php?doctor=' . urlencode($doctor['name']) . '">Book Now</a>';
         echo '</div>';
     }
     ?>

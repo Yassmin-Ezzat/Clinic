@@ -1,0 +1,118 @@
+th{
+    text-align: left;
+}
+td{
+    text-align: left;
+}
+.footerbox{
+    background-color:#f8fafc;
+    width:100%;
+    height:400px;
+    overflow: hidden;
+}
+/* .logoimg{
+    width:100px;
+    height:50px;
+    transform: translate(225px,50px);
+} */
+.textnum1{
+    font-family: 'Kanit', sans-serif;
+     font-size:20px;
+   /* transform: translate(25px,50px); */
+    
+}
+.service{
+    font-family: 'Raleway', sans-serif;
+    color: #0A2472;
+    text-decoration:none ;
+    /* font-size:18px;
+    transform: translate(25px,28px);
+    display: inline-block ;
+    padding:10px; */
+}
+.textnum2{
+    font-family: 'Kanit', sans-serif;
+    font-size:20px;
+    /* transform: translate(320px,-205px); */
+    /* padding-left: 330px;
+    margin-top: 30px; */ 
+  
+   
+}
+.link{
+    font-family: 'Raleway', sans-serif;
+    color: #0A2472;
+    text-decoration:none ;
+    /* font-size:18px; */
+    /* transform: translate(320px,-210px);  */
+    display: inline-block ;
+    /* padding:10px;*/
+} 
+.textnum3{
+    font-family: 'Kanit', sans-serif;
+     font-size:20px;
+   /* transform: translate(620px,-400px); */
+ 
+}
+.info{
+    font-family: 'Raleway', sans-serif;
+    color: #0A2472;
+    text-decoration:none ;
+    /* font-size:18px;
+    transform: translate(620px,-410px); 
+    display: inline-block ;
+    padding:10px; */
+}
+.textnum4{
+    font-family: 'Kanit', sans-serif;
+   font-size:20px;
+    /*  transform: translate(1000px,-595px); */
+}
+#icon1{
+    font-size:20px;
+    text-align: right;
+    /* transform: translate(990px,-600px);
+    padding:10px; */
+}
+#icon1:hover{
+font-size:30px ;
+color:darkblue;
+} 
+#icon2{
+    font-size:20px;
+    /* transform: translate(990px,-600px);
+    padding:10px; */
+}
+#icon2:hover{
+font-size:30px ;
+color:pink;
+} 
+#icon3{
+    font-size:20px;
+    /* transform: translate(990px,-600px); */
+    padding:10px;
+}
+#icon3:hover{
+font-size:30px ;
+color: green;
+} 
+#icon4{
+    font-size:18px;
+    /* transform: translate(410px,-488px); */
+    padding:10px;
+}
+#icon5{
+    font-size:18px;
+    /* transform: translate(370px,-451px); */
+    padding:10px;
+}
+#icon6{
+    font-size:18px;
+    /* transform: translate(325px,-410px);
+    padding:10px; */
+}
+.copyright{
+    font-family: 'Kanit', sans-serif;
+    font-size:14px;
+    text-align: center;
+}
