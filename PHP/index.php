@@ -73,7 +73,7 @@ include "../partials/nav.php";
     </div>
 
     <div class=ex4>
-        <img class=ex4p src="images/location.png">
+        <img class=ex4p src="../public/images/location.png">
         <p class=text10>Accessible locations near you</p>
         <br>
         <p class=text11>Our medical centers are easy to go to and easy to park at.</p>
@@ -95,71 +95,66 @@ include "../partials/nav.php";
             but also the communication skills that make your journey worry-free.</p>
     </div>
 
-    <div>
+    <div class=veryone>
         <p class=text16>Get specailized clinical consultation</p>
         <p class=text17>Meet our doctors in all specialties, in our clinics, or by phone</p>
     </div>
 
-    <div>
 
-        <button class=spec1>
+    <div class=onea>
+<a href="Specialties.php">
+        <button class=spec1 >
             <img class=spec1p src="../public/images/pediatrics.png">
             <br><br>
             <p class=text18>Pediatrics</p>
             <p class=arrow1>→</p>
         </button>
+</a>
 
     </div>
 
-    <div>
-
+    <div class=oneb>
+    <a href="Specialties.php">
         <button class=spec2>
             <img class=spec2p src="../public/images/eye.png">
             <br><br>
             <p class=text19>Eye Care</p>
             <p class=arrow2>→</p>
         </button>
+</a>
 
     </div>
 
-    <div>
-
+    <div class=onec>
+    <a href="Specialties.php">
         <button class=spec3>
             <img class=spec3p src="../public/images/internal.png">
             <br><br>
             <p class=text20>Internal Medicine</p>
             <p class=arrow3>→</p>
         </button>
-
+</a>
     </div>
 
-    <div>
-
+    <div class=oned>
+    <a href="Specialties.php">
         <button class=spec4>
             <img class=spec4p src="../public/images/physio.png">
             <br><br>
             <p class=text21>Physiotherapy</p>
             <p class=arrow4>→</p>
         </button>
-
+</a>
     </div>
 
-    <div>
-
+    <div class=onee>
+    <a href="Specialties.php">
         <button class=spec5>
             <br><br>
             <p class=text22>+ more specialties</p>
         </button>
-
+</a>
     </div>
-
-
-
-
-
-
-
-
 
 
 

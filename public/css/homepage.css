@@ -12,7 +12,8 @@
     border-radius: 2px;
     padding: 40px;
     margin: 20px;
-    transform: translate(30px,-780px);
+     transform: translate(65px,-510px); 
+     overflow: hidden;
   }
   .text1{
     color: darkblue;
@@ -61,6 +62,7 @@
     padding: 40px;
     margin: 20px;
     transform: translate(20px,-340px);
+    overflow: hidden;
   }
   .ex1p{
     width: 80px;
@@ -83,6 +85,7 @@
     padding: 40px;
     margin: 20px;
     transform: translate(470px,-580px);
+    overflow: hidden;
   }
   .ex2p{
     width: 80px;
@@ -105,6 +108,7 @@
     padding: 40px;
     margin: 20px;
     transform: translate(470px,-550px);
+    overflow: hidden;
   }
   .ex3p{
     width: 80px;
@@ -127,6 +131,7 @@
     padding: 40px;
     margin: 20px;
     transform: translate(20px,-790px);
+    overflow: hidden;
   }
   .ex4p{
     width: 80px;
@@ -149,6 +154,7 @@
     padding: 40px;
     margin: 20px;
     transform: translate(910px,-1300px);
+    overflow: hidden;
   }
   .ex5p{
     width: 80px;
@@ -171,6 +177,7 @@
     padding: 40px;
     margin: 20px;
     transform: translate(910px,-1270px);
+    overflow: hidden;
   }
   .ex6p{
     width: 80px;
@@ -189,34 +196,35 @@
     font-family: 'Kanit', sans-serif;
     font-size: 40px;
     color: #0A2472;
-    transform: translate(45px,-1100px);
+    /* transform: translate(45px,-100px); */
    }
    .text17{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    transform: translate(45px,-1100px);
+    /* transform: translate(45px,-1100px); */
   }
   .spec1{
    background-color: #f8fafc;
    width: 280px;
    height: 230px;
-   transform: translate(805px,-1160px);
+   /* transform: translate(805px,-1160px); */
    border: none;
+  
   }
   .spec1p{
     width: 80px;
     height:50px;
-    transform: translate(-80px,-28px);
+    /* transform: translate(-80px,-28px); */
   }
   .text18{
     font-family: 'Kanit', sans-serif;
     font-size: 20px;
     color: #0A2472;
-    transform: translate(-80px,-15px);
+    /* transform: translate(-80px,-15px); */
   }
    .arrow1{
     font-size: 30px;
-    transform: translate(-105px,10px);
+    /* transform: translate(-105px,10px); */
     color: #0A2472;
   } 
    .arrow1:hover{
@@ -227,23 +235,23 @@
     background-color: white;
     width: 280px;
     height: 230px;
-    transform: translate(1090px,-1400px);
+    /* transform: translate(1090px,-1400px); */
     border: none;
    }
    .spec2p{
      width: 80px;
      height:50px;
-     transform: translate(-80px,-28px);
+     /* transform: translate(-80px,-28px); */
    }
    .text19{
      font-family: 'Kanit', sans-serif;
      font-size: 20px;
      color: #0A2472;
-     transform: translate(-80px,-15px);
+     /* transform: translate(-80px,-15px); */
    }
     .arrow2{
      font-size: 30px;
-     transform: translate(-105px,10px);
+     /* transform: translate(-105px,10px); */
      color: #0A2472;
    } 
    .arrow2:hover{
@@ -254,23 +262,23 @@
     background-color: #f8fafc;
     width: 280px;
     height: 230px;
-    transform: translate(530px,-1390px);
+    /* transform: translate(530px,-1390px); */
     border: none;
    }
    .spec3p{
      width: 80px;
      height:50px;
-     transform: translate(-80px,-28px);
+     /* transform: translate(-80px,-28px); */
    }
    .text20{
      font-family: 'Kanit', sans-serif;
      font-size: 20px;
      color: #0A2472;
-     transform: translate(-45px,-15px);
+     /* transform: translate(-45px,-15px); */
    }
     .arrow3{
      font-size: 30px;
-     transform: translate(-105px,10px);
+     /* transform: translate(-105px,10px); */
      color: #0A2472;
    } 
    .arrow3:hover{
@@ -281,23 +289,23 @@
     background-color: white;
     width: 280px;
     height: 230px;
-    transform: translate(820px,-1610px);
+    /* transform: translate(820px,-1610px); */
     border: none;
    }
    .spec4p{
      width: 80px;
      height:50px;
-     transform: translate(-80px,-28px);
+     /* transform: translate(-80px,-28px); */
    }
    .text21{
      font-family: 'Kanit', sans-serif;
      font-size: 20px;
      color: #0A2472;
-     transform: translate(-45px,-15px);
+     /* transform: translate(-45px,-15px); */
    }
     .arrow4{
      font-size: 30px;
-     transform: translate(-105px,10px);
+     /* transform: translate(-105px,10px); */
      color: #0A2472;
    } 
    .arrow4:hover{
@@ -308,14 +316,14 @@
     background-color: #f8fafc;
     width: 280px;
     height: 230px;
-    transform: translate(1085px,-1851px);
+    /* transform: translate(1085px,-1851px); */
     border: none;
    }
    .text22{
     font-family: 'Kanit', sans-serif;
     font-size: 20px;
     color: #0A2472;
-    transform: translate(-9px,-15px);
+    /* transform: translate(-9px,-15px); */
   }
   .text22:hover{
     font-size: 28px;
@@ -326,3 +334,22 @@
     display: inline;
     color:#1f1fb8;
   }
+  .veryone{
+    transform: translate(21px,-1115px);
+  }
+  .onea{
+    transform: translate(550px,-1100px);
+  }
+  .oneb{
+   transform: translate(850px,-1335px);
+  }
+  .onec{
+    transform: translate(830px,-1335px);
+   }
+   .oned{
+    transform: translate(530px,-1550px);
+  }
+  .onee{
+    transform: translate(1109px,-1797px);
+  }
+  
