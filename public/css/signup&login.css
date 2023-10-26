@@ -11,16 +11,16 @@
 
 }
 
+.error-message {
+  color: red;
+  font-size: 20px; 
+}
+
 .sign {
   color: white;
   text-align: center;
   font-size: 22px;
   padding-top: 45px;
-}
-
-.error-message {
-  color: red;
-  font-size: 16px;
 }
 
 .element {
