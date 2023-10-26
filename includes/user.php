@@ -4,25 +4,29 @@ function adduser()
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         include_once "../includes/dbh.inc.php";
 
-        $Name = htmlspecialchars($_POST["fname"]);
-        $lastname = htmlspecialchars($_POST["lname"]);
+        $Name = htmlspecialchars($_POST["name"]);
+        $age = htmlspecialchars($_POST["Age"]);
         $email = htmlspecialchars($_POST["email"]);
         $password = htmlspecialchars($_POST["password"]);
+        $address=htmlspecialchars($_POST["address"]);
 
         $sqle = "SELECT * FROM user WHERE email='$email'";
         $result = $connection->query($sqle);
-
-
-
-        $sql = "INSERT INTO user (firstname, lastname, email,password) VALUES ('$firstname', '$lastname','$email', '$password')";
-
-        if ($connection->query($sql) === TRUE) {
-            header("Location:../php/index.php");
+        if ($result->num_rows == 1) {
+            echo "User Already Exists";
         } else {
-            echo "Error: " . $connection->error;
-        }
 
-        $connection->close();
+
+            $sql = "INSERT INTO user (name, Age, email,password,address) VALUES ('$Name', '$age','$email', '$password','$address')";
+
+            if ($connection->query($sql) === TRUE) {
+                header("Location:../php/dashboard.php");
+            } else {
+                echo "Error: " . $connection->error;
+            }
+
+            $connection->close();
+        }
     }
 }
 function InsertUser()
