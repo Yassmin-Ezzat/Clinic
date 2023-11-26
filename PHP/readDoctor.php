@@ -37,7 +37,7 @@ include "../includes/dbh.inc.php";
                     echo "<td>" . $row['Name'] . "</td>";
                     echo "<td>" . $row['Email'] . "</td>";
                     echo "<td><a href='updateDoctor.php?id=" . $row['id'] . "' class='edit-button'>Edit</a></td>";
-                    echo "<td><a href='deleteDoctor.php?action=delete&doctor_id=" . $row['id'] . "' class='delete-button'>Delete</a></td>";
+                    echo "<td><a href='deleteDoctor.php?id=" . $row['id'] . "' class='delete-button'>Delete</a></td>";
                     echo "</tr>";
                 }
             }
