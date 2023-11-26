@@ -1,18 +1,18 @@
 <?php
 include "../includes/dbh.inc.php";
-?>
 
-
-<?php
 if (isset($_GET["id"])) {
-    $id = $_GET["id"];
+    $id = mysqli_real_escape_string($connection, $_GET["id"]);
 
-    $query = "DELETE FROM 'doctor' WHERE 'id'='$id'";
+    $query = "DELETE FROM `doctor` WHERE `id`='$id'";
     $result = mysqli_query($connection, $query);
-    if(!$result){
-        die("".mysqli_error($connection));
-    }else{
-        header('location:readdoctor.php?delete_msg=you have deleted the record.');
+
+    if (!$result) {
+        error_log("MySQL Error: " . mysqli_error($connection));
+        die("Failed to delete the record. Please try again.");
+    } else {
+        header('Location: readdoctor.php?delete_msg=Record deleted successfully.');
+        exit();
     }
-} 
+}
 ?>
