@@ -89,7 +89,7 @@
     <a href="dashboard.php" class="back-button">Back</a>
     <div class="container">
         <h2>Add Doctor</h2>
-        <form id="registrationForm" method="POST" action="../includes/doctor.php">
+        <form id="registrationForm" method="POST" action="../includes/admin.php">
             <input type="hidden" name="action" value="adddoctor">
             <div class="form-group">
                 <label for="name">Name</label>
