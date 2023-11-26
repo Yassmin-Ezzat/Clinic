@@ -1,6 +1,3 @@
-<?php
-include "../partials/nav.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +14,7 @@ include "../partials/nav.php";
     </div>
 
     <div class="sign">
-        <form name="log-in" action="../includes/user.php" method="post" onsubmit="return LoginHandler()">
+        <form name="log-in" action="../includes/admin.php" method="post" onsubmit="return LoginHandler(event)">
 
             <input type="hidden" name="action" value="FindUser">
 
@@ -39,6 +36,3 @@ include "../partials/nav.php";
 </body>
 
 </html>
-<?php
-include "../partials/footer.php";
-?>
