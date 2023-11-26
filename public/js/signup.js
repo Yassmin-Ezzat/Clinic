@@ -1,40 +1,52 @@
-function signupHandler() {
-    var firstName = document.forms["sign-up"]["Firstname"].value;
-    var lastName = document.forms["sign-up"]["lastname"].value;
-    var email = document.forms["sign-up"]["email"].value;
-    var password = document.forms["sign-up"]["password"].value;
-    var confirmPassword = document.forms["sign-up"]["confirm_password"].value;
+function signupHandler(event) {
+    event.preventDefault();
 
-    var errorDiv = document.querySelectorAll(".error-message");
-    errorDiv.forEach(function (element) {
+    let fullName = document.getElementById("Name").value;
+    let age = document.getElementById("Age").value;
+    let email = document.getElementById("Email").value;
+    let address = document.getElementById("Address").value;
+    let password = document.getElementById("Password").value;
+    let confirmPassword = document.getElementById("confirm_password").value;
+
+    let errorDivs = document.querySelectorAll(".error-message");
+    errorDivs.forEach(function(element) {
         element.innerHTML = "";
     });
 
-    if (firstName === "") {
-        document.getElementById("error-fir").innerHTML = "First name is required.";
-        return false;
+    let isValid = true;
+
+    if (fullName.trim() === "") {
+        document.getElementById("error-name").innerHTML = "Full name is required.";
+        isValid = false;
     }
 
-    if (lastName === "") {
-        document.getElementById("error-las").innerHTML = "Last name is required.";
-        return false;
+    if (age.trim() === "" || isNaN(age)) {
+        document.getElementById("error-age").innerHTML = "Valid age is required.";
+        isValid = false;
     }
 
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!email.match(emailPattern)) {
         document.getElementById("error-ema").innerHTML = "Invalid email format.";
-        return false;
+        isValid = false;
+    }
+
+    if (address.trim() === "") {
+        document.getElementById("error-add").innerHTML = "Address is required.";
+        isValid = false;
     }
 
     if (password.length < 8) {
         document.getElementById("error-pa").innerHTML = "Password must be at least 8 characters long.";
-        return false;
+        isValid = false;
     }
 
     if (password !== confirmPassword) {
         document.getElementById("error-pac").innerHTML = "Passwords do not match.";
-        return false;
+        isValid = false;
     }
 
-    return true;
+    if (isValid) {
+        document.forms["sign-up"].submit();
+    }
 }
