@@ -1,6 +1,3 @@
-<?php
-include "../partials/nav.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,29 +14,30 @@ include "../partials/nav.php";
     </div>
 
     <div class="sign">
-        <form name="sign-up" action="../includes/user.php" method="post" onsubmit="return signupHandler()">
+        <form name="sign-up" action="../includes/admin.php" method="post" onsubmit="return signupHandler(event)">
 
             <input type="hidden" name="action" value="InsertUser">
 
-            <input id="fir" type="text" class="element" name="Firstname" placeholder="First Name">
-            <div class="error-message" id="error-fir"></div>
+            <input id="Name" type="text" class="element" name="Full_Name" placeholder="Full Name" >
+            <div class="error-message" id="error-name"></div>
 
-            <input id="las" type="text" class="element" name="lastname" placeholder="Last Name">
-            <div class="error-message" id="error-las"></div>
+            <input id="Age" type="number" class="element" name="Age" placeholder="Age" >
+            <div class="error-message" id="error-age"></div>
 
-            <input id="ema" type="email" class="element" name="email" placeholder="Email">
+            <input id="Email" type="email" class="element" name="Email" placeholder="Email" >
             <div class="error-message" id="error-ema"></div>
 
-            <input id="add" type="text" class="element" name="address" placeholder="Address">
+            <input id="Address" type="text" class="element" name="Address" placeholder="Address" >
             <div class="error-message" id="error-add"></div>
 
-            <input id="pa" type="password" class="element" name="password" placeholder="Password">
+            <input id="Password" type="password" class="element" name="Password" placeholder="Password" >
             <div class="error-message" id="error-pa"></div>
 
-            <input id="pac" type="password" class="element" name="confirm_password" placeholder="Confirm Password">
+            <input id="confirm_password" type="password" class="element" name="confirm_password" placeholder="Confirm Password" >
             <div class="error-message" id="error-pac"></div>
 
             <input class="submit" type="submit" value="Sign Up">
+
         </form>
 
         <div>
@@ -50,8 +48,3 @@ include "../partials/nav.php";
 </body>
 
 </html>
-<?php
-include "../partials/footer.php";
-?>
-
-
