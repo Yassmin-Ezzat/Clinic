@@ -75,11 +75,20 @@
 
 
             <li>
-                <a href="#">
+                <a href="addnurse.php">
                     <span class="icon">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <ion-icon name="add-outline"></ion-icon>
                     </span>
-                    <span class="title">Password</span>
+                    <span class="title">Add Nurse</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="readnurse.php">
+                    <span class="icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                    <span class="title">Nurses</span>
                 </a>
             </li>
 
