@@ -42,7 +42,7 @@ include "../partials/nav.php";
         <br><br>
         <div>
             <button id="number"> Call 15262</button>
-            <button id="signup"> <a href="../PHP/signUp.php"> Sign up </a></button>
+            <button id="signup"> <a href="../view/signUp.php"> Sign up </a></button>
         </div>
 
     </div>

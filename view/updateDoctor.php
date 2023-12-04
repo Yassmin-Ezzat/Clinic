@@ -1,41 +1,3 @@
-<?php
-include "../includes/dbh.inc.php";
-?>
-
-<?php
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-    $query = "SELECT * FROM `doctor` WHERE `id` = $id";
-    $result = mysqli_query($connection, $query);
-    if (!$result) {
-        die("Query failed: " . mysqli_error($connection));
-    } else {
-        $row = mysqli_fetch_assoc($result);
-    }
-}
-?>
-<?php
-if (isset($_POST['update_doctor'])) {
-    if (isset($_GET['id_new'])) {
-        $idnew = $_GET['id_new'];
-    }
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $specialty = $_POST['specialty'];
-    $universityName = $_POST['universityName'];
-
-    $query = "UPDATE `doctor` SET `Name`='$name', `Email`='$email', `password`='$password', `specialty`='$specialty', `university_name`='$universityName' WHERE `id`='$idnew'";
-
-
-    $result = mysqli_query($connection, $query);
-    if (!$result) {
-        die("Query failed: " . mysqli_error($connection));
-    } else {
-        header('location:readDoctor.php?update_msg=you have successfully updated the data .');
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -124,18 +86,22 @@ if (isset($_POST['update_doctor'])) {
 </head>
 
 <body>
+    <?php
+    include "../Controller/DoctorController.php";
+    $row=doctorcontroller::getall();
+?>
 <a href="dashboard.php" class="back-button">Back</a>
     <div class="container">
         <h1>Edit Doctor</h1>
-        <form action="updateDoctor.php?id_new=  <?php echo $id; ?>" method="post">
+        <form action="DoctorController.php?id_new=  <?php echo $id; ?>" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Name" value="<?php echo $row['Name']; ?>">
+                <input type="text" id="name" name="name" required placeholder="Name" value="<?php echo $row['name']; ?>">
                 <span id="nameErrorMessage" class="error-message"></span>
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="Email" value="<?php echo $row['Email']; ?>">
+                <input type="email" id="email" name="email" required placeholder="Email" value="<?php echo $row['email']; ?>">
                 <span id="emailErrorMessage" class="error-message"></span>
             </div>
             <div class="form-group">

@@ -14,7 +14,7 @@
     <div class="navigation">
         <ul>
             <li>
-                <a href="../PHP/index.php">
+                <a href="../view/index.php">
                     <span class="icon">
                         <ion-icon name="logo.png"></ion-icon>
                     </span>
@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li>
-                <a href="../PHP/index.php">
+                <a href="../view/index.php">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -30,7 +30,7 @@
                 </a>
             </li>
             <li>
-                <a href="../PHP/dashboard.php">
+                <a href="../view/dashboard.php">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -39,7 +39,7 @@
             </li>
 
             <li>
-                <a href="adddoctor.php">
+                <a href="../view/adddoctor.php">
                     <span class="icon">
                         <ion-icon name="add-outline"></ion-icon>
                     </span>
@@ -47,7 +47,7 @@
                 </a>
             </li>
             <li>
-                <a href="readDoctor.php">
+                <a href="../view/readDoctor.php">
                     <span class="icon">
                         <ion-icon name="people-outline"></ion-icon>
                     </span>
@@ -55,7 +55,7 @@
                 </a>
             </li>
             <li>
-                <a href="addpatient.php">
+                <a href="../view/addpatient.php">
                     <span class="icon">
                         <ion-icon name="add-outline"></ion-icon>
                     </span>
@@ -64,27 +64,33 @@
             </li>
 
             <li>
-                <a href="readpatient.php">
+                <a href="../view/readpatient.php">
                     <span class="icon">
                         <ion-icon name="people-outline"></ion-icon>
                     </span>
                     <span class="title">Patients</span>
                 </a>
             </li>
-
-
-
             <li>
-                <a href="#">
+                <a href="addnurse.php">
                     <span class="icon">
                         <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
-                    <span class="title">Password</span>
+                    <span class="title">Add Nurse</span>
                 </a>
             </li>
 
             <li>
-                <a href="logIn.php">
+                <a href="readnurse.php">
+                    <span class="icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                    <span class="title">Nurses</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="../view/logIn.php">
                     <span class="icon">
                         <ion-icon name="log-out-outline"></ion-icon>
                     </span>
