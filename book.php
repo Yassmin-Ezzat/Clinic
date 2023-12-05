@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Book Appointment</title>
-    <link rel="stylesheet" href="doctor details.css">
+    <link rel="stylesheet" href="dr.css">
 </head>
 <body>
     <h1>Book Appointment</h1>
