@@ -22,11 +22,11 @@
         </div>
         <div class="col-2">
             <ul class="nav" id="nav-1">
-                <li><a href="../PHP/index.php" class="active">Home</a></li>
-                <li><a href="../PHP/dashboard.php">Dashboard</a></li>
-                <li><a href="../PHP/Specialties.php">Specialities</a></li>
-                <li><a href="../PHP/about.php">About Us</a></li>
-                <li><a href="../PHP/ourTeam.php">Our Team</a></li>
+                <li><a href="../view/index.php" class="active">Home</a></li>
+                <li><a href="../view/dashboard.php">Dashboard</a></li>
+                <li><a href="../view/Specialties.php">Specialities</a></li>
+                <li><a href="../view/about.php">About Us</a></li>
+                <li><a href="../view/ourTeam.php">Our Team</a></li>
             </ul>
         </div>
 
@@ -49,10 +49,10 @@
 
         <ul class="nav1" id="nav-1" style=" padding: 3%; margin-top: 15%;">
 
-            <li><a href="../PHP/index.php" class="active">Home</a></li>
-            <li><a href="../PHP/Specialties.php">Specialities</a></li>
-            <li><a href="../PHP/about.php">About Us</a></li>
-            <li><a href="../PHP/ourTeam.php">Our Team</a></li>
+            <li><a href="../view/index.php" class="active">Home</a></li>
+            <li><a href="../view/Specialties.php">Specialities</a></li>
+            <li><a href="../view/about.php">About Us</a></li>
+            <li><a href="../view/ourTeam.php">Our Team</a></li>
 
         </ul>
 

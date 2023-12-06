@@ -14,7 +14,7 @@
     <div class="navigation">
         <ul>
             <li>
-                <a href="../PHP/index.php">
+                <a href="../view/index.php">
                     <span class="icon">
                         <ion-icon name="logo.png"></ion-icon>
                     </span>
@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li>
-                <a href="../PHP/index.php">
+                <a href="../view/index.php">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -30,7 +30,7 @@
                 </a>
             </li>
             <li>
-                <a href="../PHP/dashboard.php">
+                <a href="../view/dashboard.php">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
