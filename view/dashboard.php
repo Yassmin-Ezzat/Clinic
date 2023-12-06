@@ -1,5 +1,5 @@
 <?php
-include "../PHP/sidebar.php";
+include "../view/sidebar.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -24,7 +24,7 @@ include "../partials/nav.php";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
- 
+
     <link rel="stylesheet" href="../public/css/homepage.css">
 
     <title>homepage</title>
@@ -42,7 +42,7 @@ include "../partials/nav.php";
         <br><br>
         <div>
             <button id="number"> Call 15262</button>
-            <button id="signup"> <a href="../PHP/signUp.php"> Sign up </a></button>
+            <button id="signup"> <a href="../view/signUp.php"> Sign up </a></button>
         </div>
 
     </div>
@@ -102,58 +102,58 @@ include "../partials/nav.php";
 
 
     <div class=onea>
-<a href="Specialties.php">
-        <button class=spec1 >
-            <img class=spec1p src="../public/images/pediatrics.png">
-            <br><br>
-            <p class=text18>Pediatrics</p>
-            <p class=arrow1>→</p>
-        </button>
-</a>
+        <a href="Specialties.php">
+            <button class=spec1>
+                <img class=spec1p src="../public/images/pediatrics.png">
+                <br><br>
+                <p class=text18>Pediatrics</p>
+                <p class=arrow1>→</p>
+            </button>
+        </a>
 
     </div>
 
     <div class=oneb>
-    <a href="Specialties.php">
-        <button class=spec2>
-            <img class=spec2p src="../public/images/eye.png">
-            <br><br>
-            <p class=text19>Eye Care</p>
-            <p class=arrow2>→</p>
-        </button>
-</a>
+        <a href="Specialties.php">
+            <button class=spec2>
+                <img class=spec2p src="../public/images/eye.png">
+                <br><br>
+                <p class=text19>Eye Care</p>
+                <p class=arrow2>→</p>
+            </button>
+        </a>
 
     </div>
 
     <div class=onec>
-    <a href="Specialties.php">
-        <button class=spec3>
-            <img class=spec3p src="../public/images/internal.png">
-            <br><br>
-            <p class=text20>Internal Medicine</p>
-            <p class=arrow3>→</p>
-        </button>
-</a>
+        <a href="Specialties.php">
+            <button class=spec3>
+                <img class=spec3p src="../public/images/internal.png">
+                <br><br>
+                <p class=text20>Internal Medicine</p>
+                <p class=arrow3>→</p>
+            </button>
+        </a>
     </div>
 
     <div class=oned>
-    <a href="Specialties.php">
-        <button class=spec4>
-            <img class=spec4p src="../public/images/physio.png">
-            <br><br>
-            <p class=text21>Physiotherapy</p>
-            <p class=arrow4>→</p>
-        </button>
-</a>
+        <a href="Specialties.php">
+            <button class=spec4>
+                <img class=spec4p src="../public/images/physio.png">
+                <br><br>
+                <p class=text21>Physiotherapy</p>
+                <p class=arrow4>→</p>
+            </button>
+        </a>
     </div>
 
     <div class=onee>
-    <a href="Specialties.php">
-        <button class=spec5>
-            <br><br>
-            <p class=text22>+ more specialties</p>
-        </button>
-</a>
+        <a href="Specialties.php">
+            <button class=spec5>
+                <br><br>
+                <p class=text22>+ more specialties</p>
+            </button>
+        </a>
     </div>
 
 
@@ -161,5 +161,5 @@ include "../partials/nav.php";
 </body>
 
 </html><?php
-include "../partials/footer.php";
-?>
+        include "../partials/footer.php";
+        ?>
