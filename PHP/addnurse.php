@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Doctor</title>
+    <title>Add Nurse</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,7 +39,8 @@
 
         input[type="text"],
         input[type="email"],
-        input[type="password"] {
+        input[type="password"],
+        input[type="number"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -88,9 +89,9 @@
 <body>
     <a href="dashboard.php" class="back-button">Back</a>
     <div class="container">
-        <h2>Add Doctor</h2>
+        <h2>Add Nurse</h2>
         <form id="registrationForm" method="POST" action="../includes/admin.php">
-            <input type="hidden" name="action" value="adddoctor">
+            <input type="hidden" name="action" value="addnurse">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required placeholder="Enter Name">
@@ -106,16 +107,7 @@
                 <input type="password" id="password" name="password" required placeholder="Enter Password">
                 <span id="passwordErrorMessage" class="error-message"></span>
             </div>
-            <div class="form-group">
-                <label for="specialty">Specialty</label>
-                <input type="text" id="specialty" name="specialty" required placeholder="Enter Specialty">
-                <span id="specialtyErrorMessage" class="error-message"></span>
-            </div>
-            <div class="form-group">
-                <label for="universityName">University Name</label>
-                <input type="text" id="universityName" name="universityName" required placeholder="Enter University Name">
-                <span id="universityNameErrorMessage" class="error-message"></span>
-            </div>
+
             <div class="form-group">
                 <button type="submit" class="submit-button">Add</button>
             </div>
@@ -127,8 +119,8 @@
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
         const passwordInput = document.getElementById('password');
-        const specialtyInput = document.getElementById('specialty');
-        const universityNameInput = document.getElementById('universityName');
+        const AgeInput = document.getElementById('Age');
+        const addressInput = document.getElementById('address');
 
         registrationForm.addEventListener('submit', function(event) {
             if (!isFormValid()) {
@@ -151,11 +143,11 @@
                 isValid = false;
             }
 
-            if (!validateSpecialty(specialtyInput.value)) {
+            if (!validateAge(AgeInput.value)) {
                 isValid = false;
             }
 
-            if (!validateUniversityName(universityNameInput.value)) {
+            if (!validateAddress(addressInput.value)) {
                 isValid = false;
             }
 
@@ -198,12 +190,24 @@
             }
         }
 
-        function validateSpecialty(specialty) {
-            return true;
+        function validateAge(age) {
+            if (isNaN(age) || age < 0) {
+                const AgeErrorMessage = document.getElementById('AgeErrorMessage');
+                AgeErrorMessage.textContent = 'Age must be a positive number.';
+                return false;
+            } else {
+                return true;
+            }
         }
 
-        function validateUniversityName(universityName) {
-            return true;
+        function validateAddress(address) {
+            if (address.trim() === '') {
+                const addressErrorMessage = document.getElementById('addressErrorMessage');
+                addressErrorMessage.textContent = 'Address cannot be empty.';
+                return false;
+            } else {
+                return true;
+            }
         }
     </script>
 </body>

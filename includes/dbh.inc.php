@@ -4,13 +4,9 @@ $username = "root";
 $password = "";
 $DB = "clinic";
 
-$connection = mysqli_connect($servername,$username,$password,$DB);
+$connection = mysqli_connect($servername, $username, $password, $DB);
 
 
-if(!$connection){
+if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
-else{
-    echo"connected to DB";
-}
-?>

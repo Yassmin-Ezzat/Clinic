@@ -5,7 +5,7 @@ include "../includes/dbh.inc.php";
 <?php
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "SELECT * FROM `user` WHERE `id` = $id";
+    $query = "SELECT * FROM `nurse` WHERE `id` = $id";
     $result = mysqli_query($connection, $query);
     if (!$result) {
         die("Query failed: " . mysqli_error($connection));
@@ -15,24 +15,22 @@ if (isset($_GET['id'])) {
 }
 ?>
 <?php
-if (isset($_POST['update_user'])) {
+if (isset($_POST['update_nurse'])) {
     if (isset($_GET['id_new'])) {
         $idnew = $_GET['id_new'];
     }
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $Age = $_POST['age'];
-    $Address = $_POST['Address'];
 
-    $query = "UPDATE `user` SET `name`='$name', `Email`='$email', `password`='$password', `Address`='$Address', `age`='$Age' WHERE `id`='$idnew'";
+    $query = "UPDATE `nurse` SET `Name`='$name', `Email`='$email', `password`='$password' WHERE `id`='$idnew'";
 
 
     $result = mysqli_query($connection, $query);
     if (!$result) {
         die("Query failed: " . mysqli_error($connection));
     } else {
-        header('location:readpatient.php?update_msg=you have successfully updated the data .');
+        header('location:readnurse.php?update_msg=you have successfully updated the data .');
     }
 }
 ?>
@@ -42,7 +40,7 @@ if (isset($_POST['update_user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Patients</title>
+    <title>Edit Nurse</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -124,24 +122,14 @@ if (isset($_POST['update_user'])) {
 </head>
 
 <body>
-<a href="readpatient.php" class="back-button">Back</a>
+<a href="readnurse.php" class="back-button">Back</a>
     <div class="container">
-        <h1>Edit Patients</h1>
-        <form action="updatepatient.php?id_new=  <?php echo $id; ?>" method="post">
+        <h1>Edit Nurse</h1>
+        <form action="updatenurse.php?id_new=  <?php echo $id; ?>" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Name" value="<?php echo $row['name']; ?>">
+                <input type="text" id="name" name="name" required placeholder="Name" value="<?php echo $row['Name']; ?>">
                 <span id="nameErrorMessage" class="error-message"></span>
-            </div>
-            <div class="form-group">
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" required placeholder="Age" value="<?php echo $row['age']; ?>">
-                <span id="AgeErrorMessage" class="error-message"></span>
-            </div>
-            <div class="form-group">
-                <label for="Address">Address</label>
-                <input type="text" id="Address" name="Address" required placeholder="Address" value="<?php echo $row['Address']; ?>">
-                <span id="AddressErrorMessage" class="error-message"></span>
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
@@ -154,7 +142,7 @@ if (isset($_POST['update_user'])) {
                 <span id="passwordErrorMessage" class="error-message"></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="submit-button" name="update_patient" value="UPDATE">
+                <input type="submit" class="submit-button" name="update_nurse" value="UPDATE">
             </div>
         </form>
     </div>

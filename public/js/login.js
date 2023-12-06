@@ -1,12 +1,13 @@
-function LoginHandler() {
-    var emailInput = document.getElementById("ema");
-    var passwordInput = document.getElementById("pa");
+function LoginHandler(event) {
+    event.preventDefault();
+    let emailInput = document.getElementById("ema");
+    let passwordInput = document.getElementById("pa");
 
-    var email = emailInput.value;
-    var password = passwordInput.value;
+    let email = emailInput.value;
+    let password = passwordInput.value;
 
-    var emailError = document.getElementById("error-ema");
-    var passwordError = document.getElementById("error-pa");
+    let emailError = document.getElementById("error-ema");
+    let passwordError = document.getElementById("error-pa");
 
     emailInput.classList.remove("error");
     passwordInput.classList.remove("error");

@@ -8,11 +8,11 @@ include "../includes/dbh.inc.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Doctors</title>
+    <title>All Nurses</title>
 </head>
 
 <body>
-    <h2>All Doctors</h2>
+    <h2>All Nurses</h2>
     <a href="dashboard.php" class="back-button">Back</a>
     <table class="table table-hover table-bordered table-striped">
         <thead>
@@ -26,7 +26,7 @@ include "../includes/dbh.inc.php";
         </thead>
         <tbody>
             <?php
-            $query = "SELECT id, Name, Email FROM doctor";
+            $query = "SELECT id, Name, Email FROM nurse";
             $result = mysqli_query($connection, $query);
             if (!$result) {
                 die("Query failed: " . mysqli_error($connection));
@@ -36,8 +36,8 @@ include "../includes/dbh.inc.php";
                     echo "<td>" . $row['id'] . "</td>";
                     echo "<td>" . $row['Name'] . "</td>";
                     echo "<td>" . $row['Email'] . "</td>";
-                    echo "<td><a href='updateDoctor.php?id=" . $row['id'] . "' class='edit-button'>Edit</a></td>";
-                    echo "<td><a href='deleteDoctor.php?id=" . $row['id'] . "' class='delete-button'>Delete</a></td>";
+                    echo "<td><a href='updatenurse.php?id=" . $row['id'] . "' class='edit-button'>Edit</a></td>";
+                    echo "<td><a href='deletenurse.php?id=" . $row['id'] . "' class='delete-button'>Delete</a></td>";
                     echo "</tr>";
                 }
             }

@@ -12,7 +12,7 @@ include "../includes/dbh.inc.php";
 </head>
 
 <body>
-    <h2>All Doctors</h2>
+    <h2>All Patients</h2>
     <a href="dashboard.php" class="back-button">Back</a>
     <table class="table table-hover table-bordered table-striped">
         <thead>
@@ -36,8 +36,8 @@ include "../includes/dbh.inc.php";
                     echo "<td>" . $row['id'] . "</td>";
                     echo "<td>" . $row['Name'] . "</td>";
                     echo "<td>" . $row['Email'] . "</td>";
-                    echo "<td><a href='updatepatient.php?action=edit&doctor_id=" . $row['id'] . "' class='edit-button'>Edit</a></td>";
-                    echo "<td><a href='doctor.php?action=delete&doctor_id=" . $row['id'] . "' class='delete-button'>Delete</a></td>";
+                    echo "<td><a href='updatepatient.php?id=" . $row['id'] . "' class='edit-button'>Edit</a></td>";
+                    echo "<td><a href='deleteUser.php?id=" . $row['id'] . "' class='delete-button'>Delete</a></td>";
                     echo "</tr>";
                 }
             }
