@@ -1,5 +1,6 @@
 <?php
-include 'partials/nav.php'
+session_start();
+include '../partials/nav.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,12 +16,18 @@ include 'partials/nav.php'
         <div class="signup">
           <h1 class="sign">Welcome</h1>
       </div>
+      <div class="all-1">
 <div class="all">
-      <div class="info">
-        <p>Name: </p>
-        <p>Email: </p>
-        <p>Address: </p>
-      </div>
+<?php
+    if (isset($_SESSION["Name"], $_SESSION["Email"], $_SESSION["Address"])) {
+        echo "<p>Name: " . $_SESSION["Name"] . "</p><br>";
+        echo "<p>Email:" . $_SESSION["Email"] . "</p><br>";
+        echo "<p>Address: " . $_SESSION["Address"] . "</p><br>";
+    } else {
+        echo "<p>Session data not available.</p>";
+    }
+    ?>
+      </div>    
         
       <div class="right-nav">
              <nav class="profile-nav">
@@ -60,6 +67,7 @@ include 'partials/nav.php'
               </ul>
              </nav>
           </div>
+        </div>
         </div>
         </div>
 </body>
