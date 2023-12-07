@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,8 +35,17 @@
 
         <div class="col-3">
 
-            <a href="logIn.php"> <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i></a>
+        <?php
+if (isset($_SESSION["Name"])) {
+    $profileLink = "profile.php";
+} else {
+    $profileLink = "logIn.php";
+}
+?>
 
+<a href="<?php echo $profileLink; ?>">
+    <i id="person" class="fa-regular fa-user fa-lg" style="color: #1f1fb8; margin-top: 7%;"></i>
+</a>
             <button id="call"> Call 15262</button>
 
             <i id="person1" class="fa-regular fa-user fa-md" style="color: #1f1fb8; margin-top: 7%; "></i>
