@@ -39,7 +39,7 @@
             </li>
 
             <li>
-                <a href="adddoctor.php">
+                <a href="../view/adddoctor.php">
                     <span class="icon">
                         <ion-icon name="add-outline"></ion-icon>
                     </span>

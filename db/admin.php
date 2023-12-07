@@ -2,7 +2,7 @@
 function adddoctor()
 {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        include_once "../includes/dbh.inc.php";
+        include_once "../db/dbh.inc.php";
 
         $Name = htmlspecialchars($_POST["name"]);
         $specialty = htmlspecialchars($_POST["specialty"]);
@@ -32,7 +32,7 @@ function adddoctor()
 function adduser()
 {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        include_once "../includes/dbh.inc.php";
+        include_once "../db/dbh.inc.php";
 
         $Name = htmlspecialchars($_POST["name"]);
         $age = htmlspecialchars($_POST["Age"]);
@@ -62,7 +62,7 @@ function adduser()
 
 function addnurse(){
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        include_once "../includes/dbh.inc.php";
+        include_once "../db/dbh.inc.php";
 
         $name = htmlspecialchars($_POST["name"]);
         $email = htmlspecialchars($_POST["email"]);
@@ -91,7 +91,7 @@ function addnurse(){
 function InsertUser()
 {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        include_once "../includes/dbh.inc.php";
+        include_once "../db/dbh.inc.php";
 
         $name = htmlspecialchars($_POST["Full_Name"]);
         $age = htmlspecialchars($_POST["Age"]);
@@ -123,7 +123,7 @@ function FindUser()
 {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         session_start();
-        include_once "../includes/dbh.inc.php";
+        include_once "../db/dbh.inc.php";
         $email = mysqli_real_escape_string($connection, $_POST["email"]);
         $password = $_POST["password"];
 

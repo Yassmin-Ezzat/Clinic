@@ -1,3 +1,6 @@
+<?php
+include "../partials/nav.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +17,7 @@
     </div>
 
     <div class="sign">
-        <form name="sign-up" action="../includes/admin.php" method="post" onsubmit="return signupHandler(event)">
+        <form name="sign-up" action="../db/patient.php" method="post" onsubmit="return signupHandler(event)">
 
             <input type="hidden" name="action" value="InsertUser">
 
@@ -46,5 +49,6 @@
     </div>
     <script src="../public/js/signup.js"></script>
 </body>
+
 
 </html>

@@ -1,3 +1,6 @@
+<?php
+include "../partials/nav.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +17,7 @@
     </div>
 
     <div class="sign">
-        <form name="log-in" action="../includes/admin.php" method="post" onsubmit="return LoginHandler(event)">
+        <form name="log-in" action="../db/patient.php" method="post" onsubmit="">
 
             <input type="hidden" name="action" value="FindUser">
 

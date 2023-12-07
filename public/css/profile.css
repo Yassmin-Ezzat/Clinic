@@ -36,11 +36,12 @@ a{
     display: block;
     padding: 0px 15px;
 }
-.all{
+.all-1{
     display: flex;
 }
 p{
-    margin-bottom: 20%;
+    margin-top: 6%;
+    margin-left: 5%;
     font-weight: bolder;
 }
 .info{
@@ -50,11 +51,11 @@ p{
 .right-nav{
 
     width: 22%;
-    margin-top: 2%;
-    margin-left: 2%;
-    position: absolute;
-    left: 74%;
-    flex: content;
+    margin-top: 1.5%;
+    margin-left: 60%;
+    position: static;
+    /* left: 74%; */
+    /* flex: content; */
 }
 
 .right-nav .profile-nav ul{
