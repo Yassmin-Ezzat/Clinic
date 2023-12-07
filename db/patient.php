@@ -63,6 +63,39 @@ function FindUser()
     }
 }
 
+function UpdateUser()
+{
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        session_start();
+        include_once "../db/dbh.inc.php";
+
+        $userID = $_SESSION["ID"];
+
+       
+        $name = htmlspecialchars($_POST["Firstname"]);
+        $age = htmlspecialchars($_POST["Age"]);
+        $email = htmlspecialchars($_POST["email"]);
+        $address = htmlspecialchars($_POST["address"]);
+        $password = htmlspecialchars($_POST["pas"]);
+
+        $sql = "UPDATE user SET name='$name', age='$age', Email='$email', Address='$address', password='$password' WHERE id='$userID'";
+
+        if ($connection->query($sql) === TRUE) {
+            $_SESSION["Name"] = $name;
+            $_SESSION["Age"] = $age;
+            $_SESSION["Address"] = $address;
+            $_SESSION["Password"] = $password;
+            $_SESSION["Email"] = $email;
+
+            header("Location:../view/profile.php");
+        } else {
+            echo "Error updating record: " . $connection->error;
+        }
+
+        $connection->close();
+    }
+}
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST["action"])) {
@@ -71,6 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             insertUser();
         } elseif ($action === "FindUser") {
             FindUser();
+        }elseif ($action === "UpdateUser") {
+            UpdateUser();
         }else {
             echo "Invalid action";
         }
