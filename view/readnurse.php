@@ -1,5 +1,5 @@
 <?php
-include "../includes/dbh.inc.php";
+include "../db/dbh.inc.php";
 ?>
 
 <!DOCTYPE html>
