@@ -39,12 +39,12 @@ include "../db/dbh.inc.php";
                     $sum=0;
                     while ($row = mysqli_fetch_assoc($result)) {
                        $sum++;
-                       echo '<div class="numbers">' . $sum . '</div>';                    }
-    
+                        }
+                    echo '<div class="numbers">' . $sum . '</div>';
                 }
                 ?>
                 
-                <div class="cardName">Total patients</div>
+                <div class="cardName">Patients</div>
             </div>
 
             <div class="iconBx">
@@ -54,23 +54,48 @@ include "../db/dbh.inc.php";
 
         <div class="card">
             <div>
-                <div class="numbers">284</div>
-                <div class="cardName">Messages</div>
+            <?php
+                $query = "SELECT * FROM doctor";
+                $result = mysqli_query($connection, $query);
+                if (!$result) {
+                    die("Query failed: " . mysqli_error($connection));
+                } else {
+                    $sum=0;
+                    while ($row = mysqli_fetch_assoc($result)) {
+                       $sum++;
+                    }
+                    echo '<div class="numbers">' . $sum . '</div>';
+                }
+                ?>
+                
+                <div class="cardName">Doctors</div>
             </div>
 
             <div class="iconBx">
-                <ion-icon name="chatbubbles-outline"></ion-icon>
+                <ion-icon name="people-outline"></ion-icon>
             </div>
         </div>
 
         <div class="card">
             <div>
-                <div class="numbers">$7,842</div>
-                <div class="cardName">Earning</div>
+            <?php
+                $query = "SELECT * FROM nurse";
+                $result = mysqli_query($connection, $query);
+                if (!$result) {
+                    die("Query failed: " . mysqli_error($connection));
+                } else {
+                    $sum=0;
+                    while ($row = mysqli_fetch_assoc($result)) {
+                       $sum++;
+                       }
+                 echo '<div class="numbers">' . $sum . '</div>';
+                }
+                ?>
+                <div class="cardName">Nurses</div>
             </div>
 
             <div class="iconBx">
-                <ion-icon name="cash-outline"></ion-icon>
+                <ion-icon name="people-outline"></ion-icon>
             </div>
         </div>
     </div>
