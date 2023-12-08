@@ -1,5 +1,7 @@
 <?php
 include "../view/sidebar.php";
+include "../db/dbh.inc.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +30,20 @@ include "../view/sidebar.php";
 
         <div class="card">
             <div>
-                <div class="numbers">80</div>
+                <?php
+                $query = "SELECT * FROM patient";
+                $result = mysqli_query($connection, $query);
+                if (!$result) {
+                    die("Query failed: " . mysqli_error($connection));
+                } else {
+                    $sum=0;
+                    while ($row = mysqli_fetch_assoc($result)) {
+                       $sum++;
+                       echo '<div class="numbers">' . $sum . '</div>';                    }
+    
+                }
+                ?>
+                
                 <div class="cardName">Total patients</div>
             </div>
 
