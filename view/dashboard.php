@@ -19,8 +19,21 @@ include "../db/dbh.inc.php";
     <div class="cardBox">
         <div class="card">
             <div>
-                <div class="numbers">0</div>
-                <div class="cardName">Appointment Today</div>
+            <?php
+                $todayDate = date("Y-m-d");
+                $query = "SELECT * FROM appointment WHERE data= '$todayDate'";
+                $result = mysqli_query($connection, $query);
+                if (!$result) {
+                    die("Query failed: " . mysqli_error($connection));
+                } else {
+                    $sum=0;
+                    while ($row = mysqli_fetch_assoc($result)) {
+                       $sum++;
+                        }
+                  echo '<div class="numbers">' . $sum . '</div>';
+                }
+                ?>
+                <div class="cardName">Appointments Today</div>
             </div>
 
             <div class="iconBx">
