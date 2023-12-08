@@ -26,7 +26,7 @@ include "../db/dbh.inc.php";
         </thead>
         <tbody>
             <?php
-            $query = "SELECT id, Name, Email FROM user";
+            $query = "SELECT id, Name, Email FROM patient";
             $result = mysqli_query($connection, $query);
             if (!$result) {
                 die("Query failed: " . mysqli_error($connection));
