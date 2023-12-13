@@ -46,6 +46,7 @@ include "../partials/nav.php";
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec5p src="images/rad.png">
             <div class="box" id="radation oncologist">
                 <h2> Radation oncologist</h2>
                 <p>If your cancer can be treated with radiation, you will be referred to a radiation oncologist
@@ -53,6 +54,7 @@ include "../partials/nav.php";
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec6p src="images/ultra.png">
             <div class="box" id="Ultrasonography ">
                 <h2>Ultrasonography</h2>
                 <p>An ultrasound is an imaging test that uses sound waves to make pictures of organs,
@@ -60,6 +62,7 @@ include "../partials/nav.php";
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec7p src="images/obst.png">
             <div class="box" id="Obstetrics and Gynecology">
                 <h2>Obstetrics and Gynecology </h2>
                 <p>Obstetrics and gynecology is a broad and diverse branch of medicine,
@@ -67,12 +70,14 @@ include "../partials/nav.php";
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec8p src="images/vasc.png">
             <div class="box" id="Vascular">
                 <h2>Vascular </h2>
                 <p>Vascular surgeons are specialists who are highly trained to treat diseases of the vascular system</p>
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec9p src="images/plastic.png">
             <div class="box" id="plastic surgeon">
                 <h2>Plastic surgeon</h2>
                 <p>Plastic surgery restores and improves function, as well as appearance.</p>
