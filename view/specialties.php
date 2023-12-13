@@ -15,12 +15,14 @@ include "../partials/nav.php";
     <br><br><br> <br><br><br> <br><br><br>
     <div class="container">
         <a class=linedecor href="doctor details.php">
+        <img  class=spec1p src="images/ortho.png">
             <div class="box" id="orthopedic">
                 <h2>Orthopedic</h2>
                 <p>Orthopedic surgeons are doctors who specialize in the musculoskeletal system</p>
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec2p src="images/ped.png">
             <div class="box" id="pediatrician ">
                 <h2>Pediatrician </h2>
                 <p> A pediatrician is a doctor who treats children. 
@@ -28,6 +30,7 @@ include "../partials/nav.php";
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec3p src="images/surg.png">
             <div class="box" id="surgeon">
                 <h2>Surgeaon</h2>
                 <p>Surgeons operate on patients to treat injuries, 
@@ -35,6 +38,7 @@ include "../partials/nav.php";
             </div>
         </a>
         <a class=linedecor href="doctor details.php">
+        <img  class=spec4p src="images/urolo.png">
             <div class="box" id="urologist">
                 <h2>Urologist</h2>
                 <p>A urologist is a medical doctor specializing in conditions that affect the urinary tract
