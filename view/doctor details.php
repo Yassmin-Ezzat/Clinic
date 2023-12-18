@@ -1,62 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dr.css">
     <title>Doctor Details</title>
-    <link rel="stylesheet" href="../public/css/doctor_details.css">
 </head>
-
 <body>
-    <h1>Doctor Details</h1>
-    <?php
-    //doctor details
-    $doctors = [
-        [
-            'name' => 'Dr. Magdi Yacoub',
-            'specialty' => 'Cardiology',
-            'schedule' => [
-                'Monday' => ['Select', '9:00 AM', '10:00 AM', '11:00 AM'],
-            ],
-            'clinic' => 'icare Clinic',
-            'contact' => '01234567890',
-            'email' => 'MagdiYacoub@gmail.com',
-        ],
-        [
-            'name' => 'Dr. Muneeb Shah',
-            'specialty' => 'Dermatology',
-            'schedule' => [
-                'Thursday' => ['Select', '2:00 PM', '3:00 PM', '4:00 PM'],
-            ],
-            'clinic' => 'icare Clinic',
-            'contact' => '01123456780',
-            'email' => 'MuneebShah@gmail.com',
-        ],
-    ];
-
-    // Display dr.det
-    foreach ($doctors as $doctor) {
-        echo '<div class="doctor">';
-        echo '<h2>' . $doctor['name'] . '</h2>';
-        echo '<p><strong>Specialty:</strong> ' . $doctor['specialty'] . '</p>';
-        echo '<p><strong>Clinic:</strong> ' . $doctor['clinic'] . '</p>';
-        echo '<p><strong>Contact:</strong> ' . $doctor['contact'] . '</p>';
-        echo '<p><strong>Email:</strong> ' . $doctor['email'] . '</p>';
-        echo '<h3>Schedule:</h3>';
-        echo '<ul>';
-        foreach ($doctor['schedule'] as $day => $times) {
-            echo '<li><strong>' . $day . ':</strong>';
-            echo '<select>';
-            foreach ($times as $time) {
-                echo '<option value="' . $time . '">' . $time . '</option>';
-            }
-            echo '</select>';
-            echo '</li>';
-        }
-        echo '</ul>';
-        echo '<a href="booking.php?doctor=' . urlencode($doctor['name']) . '">Book Now</a>';
-        echo '</div>';
-    }
-    ?>
+    <div class="container">
+        <div class="doctor-details">
+            <div class="doctor-image">
+                <img src="Dr. MagdiYacoub.jpg" alt="Dr. MagdiYacoub" class="rectangle-image">
+            </div>
+            <div class="doctor-info">
+                <p>Speciality: Cardiologist</p>
+                <h1>Dr. Magdi Yacoub</h1>
+                <p>Graduated from Cairo University</p>
+                <!-- Add a link to the booking appointment page -->
+                <a href="booking.php" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
+
