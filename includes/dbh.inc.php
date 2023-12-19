@@ -1,16 +1,19 @@
+
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$DB = "clinic";
+function OpenCon()
+{
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "";
+    $db = "clinic";
 
-$connection = mysqli_connect($servername,$username,$password,$DB);
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n" . $conn->error);
 
-
-if(!$connection){
-    die("Connection failed: " . mysqli_connect_error());
+    return $connection;
 }
-else{
-    echo"connected to DB";
+
+function CloseCon($connection)
+{
+    $connection->close();
 }
 ?>
