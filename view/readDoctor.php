@@ -26,8 +26,9 @@ include "../db/dbh.inc.php";
         </thead>
         <tbody>
             <?php
-            $query = "SELECT id, Name, Email FROM doctor";
+            $query = "SELECT id, Name, Email FROM doctor WHERE Specialty = 'cardiologist'";
             $result = mysqli_query($connection, $query);
+            
             if (!$result) {
                 die("Query failed: " . mysqli_error($connection));
             } else {
@@ -47,6 +48,7 @@ include "../db/dbh.inc.php";
 </body>
 
 </html>
+
 
 <style>
     body {
