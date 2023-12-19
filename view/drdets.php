@@ -16,7 +16,6 @@
                 <p>Speciality: Cardiologist</p>
                 <h1>Dr. Magdi Yacoub</h1>
                 <p>Graduated from Cairo University</p>
-                <!-- Add a link to the booking appointment page -->
                 <a href="booking.php" class="book-now-btn">Book Now</a>
             </div>
         </div>
