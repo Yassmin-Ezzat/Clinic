@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="doctor-details">
+        <div class="drdets">
             <div class="doctor-image">
                 <img src="Dr. MagdiYacoub.jpg" alt="Dr. MagdiYacoub" class="rectangle-image">
             </div>
