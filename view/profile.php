@@ -39,14 +39,14 @@ include '../partials/nav.php';
                   </a>
 
                 <li>
-                  <a href="/user/wishlist">
+                  <a href="booking.php">
                   <i class="fa-regular fa-calendar-check" style="color: #1f1fb8;"></i>
                   Register
                   </a>
                 </li>
                 
                 <li>
-                  <a href="/user/wishlist">
+                  <a href="appointmentreview.php">
                   <i class="fa-solid fa-clock-rotate-left" style="color: #1f1fb8;"></i>
                   History
                   </a>
