@@ -1,66 +1,84 @@
-<?php
+<?php 
 include '..\partials\nav.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="..\public\css\booking.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnectionect" href="https://fonts.googleapis.com">
+<link rel="preconnectionect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\public\css\booking.css">
 
-  <title>booking</title>
+    <title>Appointment Booking System</title>
 </head>
-
 <body>
-  <div class=book1>
+<div class=book1>
     <button class=btext1><a class=btext111 href="index.php">Home</a>/Booking</button>
-    <p class=btext2>Book an Appointment</p>
-  </div>
-  <br><br>
-  <div class=bookingform>
-    <form name="booking" action="#" method="post" onsubmit="#">
+<p class=btext2>Book an Appointment</p>
+</div>
+<br><br>
+<div class=bookingform>
+    <form action="..\view\process.php" method="post">
+ 
+         <label for="doctor_id">Doctor:</label>
+        <select name="doctor_id" required class=opt1> 
+            <!-- Fetch doctors from the 'doctor' table -->
+            <?php
+           
+            
+            include_once "../db/dbh.inc.php";
 
-      <select name="specialization" class=opt1>
-        <option value="">specialization</option>
-        <option value="volvo">eye care</option>
-        <option value="saab">pediatrics</option>
-        <option value="opel">internal medicine</option>
-        <option value="audi">physiotherapy</option>
-      </select>
-      <br><br>
+            $sql = "SELECT id, name FROM doctor";
+            $result = mysqli_query($connection, $sql);
 
-      <select name="drs" class=opt2>
-        <option value="">physician</option>
-        <option value="volvo">samira ossama</option>
-        <option value="saab">magdy yaccoub</option>
-        <option value="opel">adam youssef</option>
-        <option value="audi">laila yahia</option>
-      </select>
-      <br><br>
-      <span>
-        <input type="date" class=opt3 name="date" placeholder="Date">
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<option value='{$row['id']}'>{$row['name']}</option>";
+            }
 
+            
+            ?>
+        </select><br><br>
 
-        <input type="time" class=opt4 name="time" placeholder="time">
+        <label for="patient_id">Patient:</label>
+        <!-- <select name="patient_id" required class=opt2>  -->
+            <!-- Fetch patients from the 'patient' table -->
+            <?php
+            include_once "../db/dbh.inc.php";
+
+            $sql = "SELECT id, name FROM patient";
+            $result = mysqli_query($connection, $sql);
+
+            echo "<input type=\"text\" value='{$_SESSION["Name"]}'>";
+            echo "<input name=\"patient_id\" type=\"hidden\" value='{$_SESSION["ID"]}'>";
+            
+
+            // while ($row = mysqli_fetch_assoc($result)) {
+            //     echo "<option value='{$row['id']}'>{$row['name']}</option>";
+            // }
+
+            $connection->close();
+            ?>
+        </select><br><br>
+        <span>
+        <!-- <label for="appointment_date">Appointment Date:</label> -->
+        <input type="date" class=opt3 name="appointment_date" required>
+
+        <!-- <label for="appointment_time">Appointment Time:</label> -->
+        <input type="time" class=opt4 name="appointment_time" required>
         <br><br>
-      </span>
-
-      <input type="tel" class=opt5 name="phone" placeholder="Phone number"><br>
-      <br>
-      <span>
-        <input class=submitbtn type="submit" value="Book Appointment">
+        </span>
+        <span>
+        <input type="submit" class=submitbtn  value="Book Appointment">
         <button class=cancelbtn><a class=cancelbtn1 href="index.php">Cancel</a></button>
-      </span>
+        </span>
     </form>
-    <div>
-      <br> <br><br>
+        </div>
 </body>
-
 </html>
-<?php
+<?php 
 include '..\partials\footer.php';
 ?>
